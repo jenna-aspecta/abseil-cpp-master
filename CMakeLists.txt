@@ -86,6 +86,16 @@ include(AbseilHelpers)
 ##
 ## DO NOT rely on the internal targets outside of the prefix
 
+##
+## Using absl targets
+##
+## all public absl targets are
+## exported with the absl:: prefix
+##
+## e.g absl::base absl::synchronization absl::strings ....
+##
+## DO NOT rely on the internal targets outside of the prefix
+
 
 # include current path
 list(APPEND ABSL_COMMON_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR})
